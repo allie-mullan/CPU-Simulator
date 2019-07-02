@@ -1,0 +1,48 @@
+opcode Fetch
+	PC MA
+	PC+1 CC
+	CC PC
+	M[MA] MD
+	MD IR
+opcode irmov
+	IM R{rA}	
+opcode Add
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB} 
+opcode jmp
+	R{rA} PC
+opcode rrmov
+	R{rA} R{rB}
+opcode sal
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB}
+opcode sar
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB}
+opcode and
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB}
+opcode xor
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB}
+opcode sub
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB}
+opcode mul
+	R{rA} AA
+	AA+R{rB} CC
+	CC R{rB}
+opcode lea
+opcode mrmov
+opcode rmmov
+opcode push
+opcode pop
+
+
+

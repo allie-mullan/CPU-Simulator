@@ -1,0 +1,4 @@
+wordSize 16
+busSize 16
+aluFunctionality 1111111111111111
+noOfRegisters 6
